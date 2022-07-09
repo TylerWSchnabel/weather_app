@@ -1,0 +1,16 @@
+
+#weatherGrid {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(168, 168, 232);
+    border: 2px solid black;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.gridHead{
+    grid-column: 1 / span 6;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}

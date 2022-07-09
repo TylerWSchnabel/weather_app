@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="searchHead">Search for your city</p>
+    <input type="text" id="weatherSearch" placeholder="Search...">
+    <button type="button" id="weatherBtn" onclick="setCity()">Search</button>
+    <div id="weatherGrid">
+        <h1 class="gridHead" id="gridHead"></h1>
+        <div class="weatherCell">
+            <p class="cellHead">Tempreture</p>
+            <p class="cellInfo" id="cityTemp"></p>
+        </div>
+        <div class="weatherCell">
+            <p class="cellHead">Feels Like</p>
+            <p class="cellInfo" id='cityFeel'></p>
+        </div>
+        <div class="weatherCell">
+            <p class="cellHead">Weather</p>
+            <p class="cellInfo" id="cityWeather"></p>
+        </div>
+        <div class="weatherCell">
+            <p class="cellHead">Humidity</p>
+            <p class="cellInfo" id="cityHumidity"></p>
+        </div>
+        <div class="weatherCell">
+            <p class="cellHead">High</p>
+            <p class="cellInfo" id="cityMax"></p>
+        </div>
+        <div class="weatherCell">
+            <p class="cellHead">Low</p>
+            <p class="cellInfo" id="cityMin"></p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
