@@ -9,7 +9,7 @@ main {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url(/items/pexels-abdullah-ghatasheh-1631677.jpg);
+    background-image: url(./items/pexels-abdullah-ghatasheh-1631677.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     display: grid;
