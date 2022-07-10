@@ -6,7 +6,7 @@ let weatherStatement = document.getElementById('todaysWeatherStatement');
 
 async function getWeather(){
     try {
-        const response = await fetch('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=92df3df23b74efecfd8eb5b93886622f&units=imperial', {mode: 'cors'})
+        const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=92df3df23b74efecfd8eb5b93886622f&units=imperial', {mode: 'cors'})
         const weekWeather = await response.json();
         displayWeather();
         document.getElementById('gridHead').textContent = data.toTitleCase(city) + ", "+ weekWeather.city.country;
@@ -17,7 +17,7 @@ async function getWeather(){
                 let dayWeather = document.getElementById('day'+i+'Weather');
                 let dayHead = document.getElementById('day'+i+'Head');
                 data.getDay(i);
-                let icon = "http://openweathermap.org/img/w/" + weekWeather.list[i].weather[0].icon + ".png";
+                let icon = "https://openweathermap.org/img/w/" + weekWeather.list[i].weather[0].icon + ".png";
                 dayHead.textContent = day;
                 dayTemp.textContent = weekWeather.list[i].main.temp.toFixed(1) + " \u2109";
                 dayIcon.src = icon;
