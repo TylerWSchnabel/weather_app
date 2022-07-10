@@ -20,11 +20,30 @@ main {
 .pageHead {
     align-self: center;
     justify-self: center;
-    
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 
 .searchContainer {
     margin-left: 3rem;
+    font-size: 1.3rem;
+}
+
+#weatherSearch {
+    height: 1.3rem;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#weatherBtn{
+    background-color: black;
+    color: white;
+    height: 1.7rem;
+    border: 2px solid black;
+    border-radius: 8px;
+
 }
 
 
@@ -45,6 +64,11 @@ main {
     grid-column: 1 / span 7;
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.weatherCell{
+    font-size: 1.3rem;
 }
 
 .todaysWeather{
