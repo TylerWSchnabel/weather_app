@@ -1,16 +1,78 @@
+@font-face {
+    font-family: glacier;
+    src: url(./items/glacial.otf);
+}
+
+main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/items/pexels-abdullah-ghatasheh-1631677.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto;
+    font-family: glacier;
+}
+
+.pageHead {
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.searchContainer {
+    margin-left: 3rem;
+}
+
 
 #weatherGrid {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: rgb(168, 168, 232);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
     border: 2px solid black;
     margin-top: 4rem;
     text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .gridHead{
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 7;
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
+}
+
+.todaysWeather{
+    color: white;
+    display: grid;
+}
+#todaysWeatherStatement{
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, .6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+.poweredBy {
+    font-size: 1rem;
+    color: white;
+    align-self: bottom;
+}
+
+.poweredImg{
+    height: 2rem;
+    align-self: bottom;
 }

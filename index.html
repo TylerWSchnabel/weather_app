@@ -8,37 +8,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p class="searchHead">Search for your city</p>
-    <input type="text" id="weatherSearch" placeholder="Search...">
-    <button type="button" id="weatherBtn" onclick="setCity()">Search</button>
-    <div id="weatherGrid">
-        <h1 class="gridHead" id="gridHead"></h1>
-        <div class="weatherCell">
-            <p class="cellHead">Tempreture</p>
-            <p class="cellInfo" id="cityTemp"></p>
+    <main>
+        <header  class="pageHead">
+            <h1>Your Weather Forecast</h1>
+        </header>
+        <div class="searchContainer">
+            <p class="searchHead">Search for your city</p>
+            <input type="text" id="weatherSearch" placeholder="Search...">
+            <button type="button" id="weatherBtn" onclick="setCity()">Search</button>
         </div>
-        <div class="weatherCell">
-            <p class="cellHead">Feels Like</p>
-            <p class="cellInfo" id='cityFeel'></p>
+            <div id="weatherGrid">
+            <h1 class="gridHead" id="gridHead"></h1>
+            <div class="weatherCell">
+                <p class="cellHead" id="day0Head">Today</p>
+                <div class="cellInfo" id="day0Cont">
+                    <p class="dayTemp" id="day0Temp"></p>
+                    <img src="" class="dayIcon" id="day0Icon">
+                    <p class="dayWeather" id="day0Weather"></p>
+                </div>
+            </div>
+            <div class="weatherCell">
+                <p class="cellHead" id="day1Head">Tomorrow</p>
+                <div class="cellInfo" id="day1Cont">
+                    <p class="dayTemp" id="day1Temp"></p>
+                    <img src="" class="dayIcon" id="day1Icon">
+                    <p class="dayWeather" id="day1Weather"></p>
+                </div>
+            </div>
+            <div class="weatherCell">
+                <p class="cellHead" id="day2Head">Day 2</p>
+                <div class="cellInfo" id='day2Cont'>
+                    <p class="dayTemp" id="day2Temp"></p>
+                    <img src="" class="dayIcon" id="day2Icon">
+                    <p class="dayWeather" id="day2Weather"></p>
+                </div>
+            </div>
+            <div class="weatherCell">
+                <p class="cellHead" id="day3Head">Day 3</p>
+                <div class="cellInfo" id="day3Cont">
+                    <p class="dayTemp" id="day3Temp"></p>
+                    <img src="" class="dayIcon" id="day3Icon">
+                    <p class="dayWeather" id="day3Weather"></p>
+                </div>
+            </div>
+            <div class="weatherCell">
+                <p class="cellHead" id="day4Head">Day 4</p>
+                <div class="cellInfo" id="day4Cont">
+                    <p class="dayTemp" id="day4Temp"></p>
+                    <img src="" class="dayIcon" id="day4Icon">
+                    <p class="dayWeather" id="day4Weather"></p>
+                </div>
+            </div>
+            <div class="weatherCell">
+                <p class="cellHead" id="day5Head">Day 5</p>
+                <div class="cellInfo" id="day5Cont">
+                    <p class="dayTemp" id="day5Temp"></p>
+                    <img src="" class="dayIcon" id="day5Icon">
+                    <p class="dayWeather" id="day5Weather"></p>
+                </div>
+            </div>
+            <div class="weatherCell">
+                <p class="cellHead" id="day6Head">Day 6</p>
+                <div class="cellInfo" id="day6Cont">
+                    <p class="dayTemp" id="day6Temp"></p>
+                    <img src="" class="dayIcon" id="day6Icon" src="">
+                    <p class="dayWeather" id="day6Weather"></p>
+                </div>
+            </div>
         </div>
-        <div class="weatherCell">
-            <p class="cellHead">Weather</p>
-            <p class="cellInfo" id="cityWeather"></p>
+        <div class="todaysWeather">
+            <p id="todaysWeatherStatement"></p>
         </div>
-        <div class="weatherCell">
-            <p class="cellHead">Humidity</p>
-            <p class="cellInfo" id="cityHumidity"></p>
-        </div>
-        <div class="weatherCell">
-            <p class="cellHead">High</p>
-            <p class="cellInfo" id="cityMax"></p>
-        </div>
-        <div class="weatherCell">
-            <p class="cellHead">Low</p>
-            <p class="cellInfo" id="cityMin"></p>
-        </div>
-    </div>
-
+        <footer class="footer">
+            <p class="poweredBy">Powered by </p>
+            <img src="https://home.openweathermap.org/assets/logo_white-011958e697955be95bdc4af6a4d1913dbf9df990cb9101a67c439879293f5947.png" class="poweredImg">
+        </footer>
+    </main>
 
     <script src="index.js"></script>
 </body>
