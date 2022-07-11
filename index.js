@@ -72,6 +72,11 @@ async function getWeather(){
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
     });
     }
+    document.addEventListener('keyup', ()=>{
+        if (event.key === "Enter"){
+            setCity();
+        }
+    })
     return {setCity, getDay, toTitleCase}
 })()
 
