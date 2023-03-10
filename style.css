@@ -15,6 +15,7 @@ main {
     display: grid;
     grid-template-rows: auto;
     font-family: glacier;
+    overflow: auto;
 }
 
 .pageHead {
@@ -78,6 +79,7 @@ main {
 #todaysWeatherStatement{
     align-self: center;
     justify-self: center;
+    text-align: center;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, .6);
     padding-left: 1rem;
@@ -99,4 +101,18 @@ main {
 .poweredImg{
     height: 2rem;
     align-self: bottom;
+}
+
+@media only screen and (max-width: 750px) {
+    
+    #weatherGrid {
+        grid-template-columns: 1fr;
+    }
+    .gridHead{
+        grid-column: 1/ span 1;
+    }
+    .weatherCell{
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
 }
